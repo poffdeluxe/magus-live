@@ -1,0 +1,22 @@
+<.flash_group flash={@flash} />
+
+<div class="flex flex-col gap-4 items-center justify-center	h-screen">
+  <div class="text-center">
+    <h1 class="magus-live-big font-serif">Magus Live</h1>
+  </div>
+
+  <div class="font-semibold-6 text-zinc-900">
+    <form action="" method="post" class="flex">
+        <input name="_csrf_token" type="hidden" value={Phoenix.Controller.get_csrf_token()} />
+        <input
+          class="border border-gray-400 rounded px-4 mr-2"
+          type="password"
+          placeholder="Password"
+          name="password"
+        />
+        <button class="text-xl magus-live-gradient font-semibold px-4 rounded">
+          Enter
+        </button>
+    </form>
+  </div>
+</div>

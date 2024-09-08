@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "description": "Comprehensive answer to the user's question with citations."
+      },
+      "cited_urls": {
+        "type": "array",
+        "description": "List of urls cited in the answer.",
+        "items": {
+            "type": "string"
+        }
+      }
+    },
+    "required": [
+      "answer"
+    ]
+  }

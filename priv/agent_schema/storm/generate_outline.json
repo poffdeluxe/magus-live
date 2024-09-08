@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+      "page_title": {
+        "type": "string",
+        "description": "Title of the Wikipedia page"
+      },
+      "sections": {
+        "type": "array",
+        "description": "Titles and descriptions for each section of the Wikipedia page.",
+        "items": {
+            "type": "object",
+            "properties": {
+              "section_title": {
+                "type": "string",
+                "description": "Title of the section"
+              },
+              "description": {
+                "type": "string",
+                "description": "Content of the section"
+              },
+              "subsections": {
+                "type": "array",
+                "description": "Titles and descriptions for each subsection of the Wikipedia page.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                      "subsection_title": {
+                        "type": "string",
+                        "description": "Title of the subsection"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Content of the subsection"
+                      }
+                    },
+                    "required": [
+                      "subsection_title",
+                      "description"
+                    ]
+                  }
+              }
+            },
+            "required": [
+              "section_title",
+              "description"
+            ]
+          }
+      }
+    },
+    "required": [
+      "page_title"
+    ]
+  }

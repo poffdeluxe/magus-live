@@ -1,0 +1,65 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+.magus-live {
+  font-size: 24px;
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #43cea2, #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #43cea2, #185a9d); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.magus-live-header {
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #43cea2, #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.magus-live-big {
+    font-size: 76px;
+    background: #43cea2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #43cea2, #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #43cea2, #185a9d); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.tail-scroller {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    filter: blur(0.02em);
+    text-shadow: 0 0 0.5em #20ffd3;
+
+    max-height: 1200px;
+}
+
+.tail-scroller * {
+    overflow-anchor: none;
+}
+
+.tail-scroller .tail-scroller-anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+.section-header {
+  border-image-slice: 1;
+  border-bottom-width: 5px;
+
+  border-image-source: linear-gradient(to right, #43cea2, #185a9d);
+}

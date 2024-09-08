@@ -1,0 +1,26 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/agents">
+        <h1 class="magus-live font-serif py-2">Magus Live</h1>
+      </a>
+      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
+        v<%= Application.spec(:magus_live, :vsn) %>
+      </p>
+    </div>
+    <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+      <a
+        href="/agents"
+        class="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200/80"
+      >
+        Agents <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-3xl">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>

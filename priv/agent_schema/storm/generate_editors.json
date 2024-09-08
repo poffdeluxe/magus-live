@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "editors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                  "affiliation": {
+                    "type": "string",
+                    "description": "Primary affiliation of the editor."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "Name of the editor."
+                  },
+                  "role": {
+                    "type": "string",
+                    "description": "Role of the editor in the context of the topic."
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "PDescription of the editor's focus, concerns, and motives."
+                  }
+                },
+                "required": [
+                  "affiliation",
+                  "name",
+                  "role",
+                  "description"
+                ]
+            }
+        }
+    },
+    "required": [
+      "editors"
+    ]
+  }

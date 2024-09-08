@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "section_title": {
+            "type": "string",
+            "description": "Title of the section"
+        },
+        "content": {
+            "type": "string",
+            "description": "Full content of the section.  Include [#] citations to the cited sources where relevant."
+        },
+        "citations": {
+            "type": "array",
+            "description": "The URLs of the cited sources in the content.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "subsections": {
+            "type": "array",
+            "description": "Titles and content for each subsection of the Wikipedia page.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "subsection_title": {
+                        "type": "string",
+                        "description": "Title of the subsection"
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "Full content of the subsection. Include [#] citations to the cited sources where relevant."
+                    }
+                },
+                "required": [
+                    "subsection_title",
+                    "content"
+                ]
+            }
+        }
+    },
+    "required": [
+        "section_title",
+        "content"
+    ]
+}
